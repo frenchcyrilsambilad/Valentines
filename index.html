@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { height: 100vh; background: #0f0f0f; color: #e5e7eb; display: flex; align-items: center; justify-content: center; font-family: Consolas, Menlo, monospace; }
+body { min-height: 100vh; background: #0f0f0f; color: #e5e7eb; display: flex; align-items: center; justify-content: center; font-family: Consolas, Menlo, monospace; padding: 20px; }
 
 
 .error { width: 100%; max-width: 760px; padding: 48px; }
@@ -22,6 +22,14 @@ body { height: 100vh; background: #0f0f0f; color: #e5e7eb; display: flex; align-
 body.card-mode { font-family: 'Crimson Text', serif; background: #111; color: #fff; justify-content: flex-start; padding-top: 50px; }
 .handwritten { font-family: 'Dancing Script', cursive; }
 .perspective { perspective: 1500px; }
+
+@media (max-width: 640px) {
+    body.card-mode {
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
 </style>
 </head>
 <body>
